@@ -1,8 +1,8 @@
 /*
  * Все паршалы импортировать в этот файл
  */
-@import '_main.scss';
-@import '_mixin.scss';
-@import '_variables.scss';
+@import './layout/variables';
+@import './layout/main';
+@import './layout/mixin';
 @import 'normalize.scss';
 @import 'base.scss';

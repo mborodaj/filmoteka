@@ -12,6 +12,7 @@ const htmlminConfig = {
 const cachebustConfig = {
   type: 'timestamp',
 };
+const fileinclude = require('gulp-file-include');
 
 const html = () => {
   return gulp
@@ -19,6 +20,7 @@ const html = () => {
     .pipe(rigger())
     .pipe(mode.production(htmlmin(htmlminConfig)))
     .pipe(mode.production(cachebust(cachebustConfig)))
+    .pipe(fileinclude())
     .pipe(gulp.dest(paths.build.html));
 };
 

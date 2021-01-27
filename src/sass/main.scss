@@ -1,8 +1,10 @@
 /*
  * Все паршалы импортировать в этот файл
  */
+
 @import './layout/variables';
 @import './layout/main';
 @import './layout/mixin';
 @import 'normalize.scss';
 @import 'base.scss';
+@import './components/footer.scss'
